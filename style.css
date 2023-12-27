@@ -14,7 +14,7 @@ img{
          url('./fonts/Raleway/Raleway-Bold.woff2') format('woff2'), 
          url('./fonts/Raleway/Raleway-Bold.woff') format('woff'),
          url('./fonts/Raleway/Raleway-Bold.ttf') format('ttf'),
-         url('./fonts/Raleway/Raleway-Bold.eot') format('eot'),
+         url('./fonts/Raleway/Raleway-Bold.eot') format('eot');
 }
 
 @font-face {
@@ -23,7 +23,7 @@ img{
          url('./fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'), 
          url('./fonts/Raleway/Raleway-SemiBold.woff') format('woff'),
          url('./fonts/Raleway/Raleway-SemiBold.ttf') format('ttf'),
-         url('./fonts/Raleway/Raleway-SemiBold.eot') format('eot'),
+         url('./fonts/Raleway/Raleway-SemiBold.eot') format('eot');
 }
 
 @font-face {
@@ -32,7 +32,7 @@ img{
          url('./fonts/Neue_Machina/NeueMachina-Bold.woff2') format('woff2'), 
          url('./fonts/Neue_Machina/NeueMachina-Bold.woff') format('woff'),
          url('./fonts/Neue_Machina/NeueMachina-Bold.ttf') format('ttf'),
-         url('./fonts/Neue_Machina/NeueMachina-Bold.eot') format('eot'),
+         url('./fonts/Neue_Machina/NeueMachina-Bold.eot') format('eot');
 }
 
 .banner_text{
