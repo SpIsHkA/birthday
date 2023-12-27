@@ -14,6 +14,7 @@ img{
          url('./fonts/Raleway/Raleway-Bold.woff2') format('woff2'), 
          url('./fonts/Raleway/Raleway-Bold.woff') format('woff'),
          url('./fonts/Raleway/Raleway-Bold.ttf') format('ttf'),
+         url('./fonts/Raleway/Raleway-Bold.eot') format('eot'),
 }
 
 @font-face {
@@ -22,6 +23,7 @@ img{
          url('./fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'), 
          url('./fonts/Raleway/Raleway-SemiBold.woff') format('woff'),
          url('./fonts/Raleway/Raleway-SemiBold.ttf') format('ttf'),
+         url('./fonts/Raleway/Raleway-SemiBold.eot') format('eot'),
 }
 
 @font-face {
@@ -30,6 +32,7 @@ img{
          url('./fonts/Neue_Machina/NeueMachina-Bold.woff2') format('woff2'), 
          url('./fonts/Neue_Machina/NeueMachina-Bold.woff') format('woff'),
          url('./fonts/Neue_Machina/NeueMachina-Bold.ttf') format('ttf'),
+         url('./fonts/Neue_Machina/NeueMachina-Bold.eot') format('eot'),
 }
 
 .banner_text{
@@ -163,6 +166,19 @@ h5{
         font-weight: 700;
         margin: 0px;
     }
+}
+
+.start{
+    width: 100%;
+    border-bottom: 2px solid #EEE;
+    height: 75px;
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали по центру */
+    justify-content: center; /* Выравнивание по горизонтали по центру */
+}
+
+.logo{
+    height: 60px;
 }
 
 .section {
