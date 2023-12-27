@@ -1,0 +1,285 @@
+body{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+img{
+    pointer-events: none;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway Bold'),
+         url('./fonts/Raleway/Raleway-Bold.woff2') format('woff2'), 
+         url('./fonts/Raleway/Raleway-Bold.woff') format('woff'),
+         url('./fonts/Raleway/Raleway-Bold.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: local('Raleway SemiBold'),
+         url('./fonts/Raleway/Raleway-SemiBold.woff2') format('woff2'), 
+         url('./fonts/Raleway/Raleway-SemiBold.woff') format('woff'),
+         url('./fonts/Raleway/Raleway-SemiBold.ttf') format('ttf'),
+}
+
+@font-face {
+    font-family: 'Neue Machine';
+    src: local('Neue Machine'),
+         url('./fonts/Neue_Machina/NeueMachina-Bold.woff2') format('woff2'), 
+         url('./fonts/Neue_Machina/NeueMachina-Bold.woff') format('woff'),
+         url('./fonts/Neue_Machina/NeueMachina-Bold.ttf') format('ttf'),
+}
+
+.banner_text{
+    font-family: Neue Machine;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+    line-height: 92.64px;
+    width: 924px;
+}
+
+h1{
+    font-family: Neue Machine;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+    line-height: 92.64px;
+}
+
+h2{
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+}
+
+p{
+    font-family: Raleway;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    margin: 0px;
+}
+
+h3{
+    font-family: Raleway;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+}
+
+h4{
+    font-family: Raleway;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+}
+
+h5{
+    font-family: Raleway;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 700;
+    margin: 0px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .banner_text{
+        font-family: Neue Machine;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0px;
+        line-height: 92.64px;
+        width: 924px;
+    }
+
+    h1{
+        font-family: Neue Machine;
+        font-size: 96px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0px;
+        line-height: 92.64px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .banner_text{
+        font-family: Neue Machine;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0px;
+        line-height: 46.32px;
+        width: 335px;
+    }
+
+    h1{
+        font-family: Neue Machine;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0px;
+        line-height: 92.64px;
+    }
+    
+    h2{
+        font-family: Raleway;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0px;
+    }
+    
+    p{
+        font-family: Raleway;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 600;
+        margin: 0px;
+    }
+    
+    h3{
+        font-family: Raleway;
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0px;
+    }
+
+    h5{
+        font-family: Raleway;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 700;
+        margin: 0px;
+    }
+}
+
+.section {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 1840px;
+    padding-top: 40px;
+    gap: 40px;
+}
+
+.banner {
+    display: flex;
+    height: 512px;
+    border-radius: 30px;
+    background: #0B0B0B;
+    color: white;
+    padding: 40px;
+    overflow: hidden;
+}
+
+.icon_banner {
+    margin-left: auto;
+}
+
+.photo_cards {
+    display: flex;
+    display: inline-flex;
+    border-radius: 30px;
+    background: #EEE;
+    overflow: hidden; /* Добавлено для скрытия выходящих изображений */
+    padding: 15px 0px;
+}
+
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 15px)); /* Исправлено */
+    }
+}
+
+.scroll {
+    display: flex;
+    gap: 15px;
+    animation: scrollAnimation 60s linear infinite;
+}
+
+.photo {
+    border-radius: 15px;
+    width: 257px;
+    height: 270px;
+    object-fit: cover;
+}
+
+.history{
+    margin-top: 40px;
+    padding: 40px;
+    border-radius: 30px;
+    background: #A285F4;
+    color: white;
+}
+
+.points{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 20px;
+    gap: 40px;
+}
+
+.point_card{
+    display: flex;
+    align-items: flex-start;
+}
+
+.point_card_text{
+    max-width: 1710px;
+    margin-left: 40px;
+}
+
+.cards_congratulation{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card_congratulation{
+    background: #EEE;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    border-radius: 30px;
+}
+
+.name{
+    display: flex;
+    gap: 20px;
+}
+
+.name_photo{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+audio::-webkit-media-controls-play-button {
+    background-color: #A285F4; /* Цвет кнопки воспроизведения в Chrome и Safari */
+    border-radius: 100px;
+    color: white;
+}
+
+audio::-webkit-media-controls-panel {
+    background: #D9D9D9;
+    width: 500px; /* Ширина панели управления в Chrome и Safari */
+}
