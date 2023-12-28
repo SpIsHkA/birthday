@@ -213,13 +213,16 @@ h5{
     padding: 15px 0px;
 }
 
-@keyframes scrollAnimation {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-100% - 15px)); /* Исправлено */
-    }
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.1); /* Увеличиваем размер при наведении */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3); /* Добавляем тень */
 }
 
 .scroll {
@@ -228,11 +231,33 @@ h5{
     animation: scrollAnimation 60s linear infinite;
 }
 
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 15px));
+    }
+}
+
 .photo {
-    border-radius: 15px;
     width: 257px;
     height: 270px;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card:hover .photo {
+    transform: scale(1.2); /* Увеличиваем размер при наведении */
+}
+
+
+.photo_cards:hover .scroll {
+    animation-play-state: paused;
+}
+
+.photo_cards:not(:hover) .scroll {
+    animation-play-state: running;
 }
 
 .history{
